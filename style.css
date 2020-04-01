@@ -72,20 +72,21 @@ html {
 
 /* About Page CSS */
 .main {
-  background-color: #d5dfe2;
+  /* background-color: #d5dfe2; */
   background-size: cover;
   position: relative; 
-  width: 100vw;
+  width: calc(100vw - 260px);
   height: 100vh;
   font-family: 'Source Sans Pro', sans-serif;
   color: white; 
   text-align: center;
   margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 } 
+
+body {
+background-color: #d5dfe2;
+}
 
 /* .background {
   background-image: url("img/roy-2.jpg");
@@ -123,8 +124,10 @@ html {
 
 .about-me-pic {
 /* float: inline-end; */
+border-radius: 5px 5px 5px;
+margin-top: 120px;
+align-items: center;
 }
-
 /* css for the sidebar nav menu and cover pic */
 
 .profile {
@@ -186,7 +189,7 @@ ul {
 }
 
 .main {
-  margin-left: 160px;
+  margin-left: 260px;
   padding: 0px 10px;
 
 }
@@ -198,7 +201,6 @@ h1.projects, .write, .blog, .blurb {
   /* display: flex; */
   /* flex-direction: row; */
   font-size: 40px;
-  margin: 0 0 750px 100px;
   font-family: 'Playfair Display', serif; 
   color: #c08037;
 }
@@ -242,7 +244,11 @@ h1.projects, .write, .blog, .blurb {
 
 .card {
   /* background: white; */
+
   margin-bottom: 2em;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -252,7 +258,6 @@ img {
 	height: auto;
   border-radius: 5px 5px 0 0;
 }
-
 
 /* .card a {
   color: black;
@@ -273,6 +278,14 @@ img {
   /* padding: 2px 16px;
   font-size: 14px; */
   padding: 1.4em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content a {
+  position: relative;
+  bottom: 5px;
 }
 
 .card-content h4 {
@@ -301,6 +314,7 @@ p.details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 200px;
 } 
 
 .card {
@@ -308,7 +322,7 @@ p.details {
   transition: 0.3s;
   border-radius: 5px;
   /* margin: 0 0 180px 0; */
-  flex: 0 1 calc(25% - 1em);
+  /* flex: 0 1 calc(25% - 1em); */
 }
 
 /* .card-top {
@@ -392,10 +406,14 @@ p.details {
 
 /* CSS for Contact Page */
 
-h1.blog {
-
+.btn-2 {
+  background-color: #c08037;
+  border: none;
+  color: #d5dfe2;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
 }
-
 
 input[type=text], select, textarea {
   width: 100%; 
